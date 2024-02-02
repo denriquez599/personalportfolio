@@ -4,15 +4,12 @@ type Props = {}
 
 function About({}: Props) {
   return (
+    <div className="">
     <div className="flex flex-row h-screen justify-center items-center">
       <div className="flex flex-col h-screen text-center justify-center items-center">
-        <img className="h-5/6 -translate-x-40 translate-y-4" src="/guitarnobg.png"/>
+        <img className="h-5/6 translate-y-4" src="/guitarnobg.png"/>
       </div>
-
       <div className="flex flex-col h-screen text-center max-w-lg max-h-80 items-center">
-        <h3 className="lowercase relative -translate-x-96 pr-40 bottom-44 font-bold tracking-[20px] text-ill text-2xl pl-4">
-          about
-        </h3>
         <div className="font-mono -translate-x-52 text-left -translate-y-32">
           <h1 className="bg-ill text-xl">
           professional
@@ -52,6 +49,7 @@ function About({}: Props) {
         
       </div>
         
+    </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import Header from './Header'
 function Contact() {
   return (
     <div>
-        <div className="h-72 flex flex-row justify-center text-center">
+        <div className="h-80 flex flex-row justify-center text-center">
             <div className="flex flex-col pt-8 items-center space-y-6 font-mono">
                 <h1 className="tracking-[14px] text-ill font-bold font-mono text-2xl">
                     contact

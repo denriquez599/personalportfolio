@@ -11,14 +11,18 @@ const query = groq`
 `;
 
 type Data = {
-    experiences: Experience[]
-}
+    experiences: Experience[];
+};
 
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<Data>
-  ) {
-    const experiences: Experience[] = await sanityClient.fetch(query);
-    
-    res.status(200).json({ experiences })
-  }
+    res: NextApiResponse<Data | { error: string }>
+) {
+    try {
+        const experiences: Experience[] = await sanityClient.fetch(query);
+        res.status(200).json({ experiences });
+    } catch (error) {
+        console.error("Error fetching experiences:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+}

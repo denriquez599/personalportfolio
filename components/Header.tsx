@@ -19,7 +19,7 @@ export default function Header({}: Props) {
     
   return (
     <header
-    className="sticky w-screen top-0 flex items-start justify-between max-w-6xl mx-auto xl:items-center py-3 font-mono z-0">
+    className="sticky w-screen top-0 flex items-start justify-between max-w-6xl mx-auto xl:items-center py-3 font-mono z-20">
         <motion.div
         initial={{
             x: -500,
@@ -68,7 +68,7 @@ export default function Header({}: Props) {
         }}
         className="cursor-pointer flex flex-row items-center text-me space-x-14 mx- text-ultimate">
             {/* Information Headers */}
-            <Link href="../BookLog">
+            <Link href="">
                 <button className="hover:text-ill hover:scale-105">projects</button>
             </Link>
             <Link href="/resume.pdf">
