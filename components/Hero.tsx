@@ -46,10 +46,10 @@ export default function Hero({}: Props) {
             </h2>
             
         </div>
-        <div className='flex flex-row-reverse pr-44'>
+        <div className='flex flex-row-reverse'>
             <h1>
                 <img
-                className="rounded-full h-2/3 mx-auto object-cover hover:scale-105 border-4 border-ill"
+                className="rounded-full h-1/2 mx-auto object-cover hover:scale-105 border-4 border-ill"
                 src="/profilebw.jpg"
                 />
             </h1>

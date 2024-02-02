@@ -25,25 +25,25 @@ const Home = ({skills, experiences}: Props) => {
       </Head>      
 
       {/* Header */}
-        <Header />
+        <Header/>
       
       {/* Hero */}
-      <section id="hero" className="snap-start bg-gradient-to-b from-[rgb(36,36,36)] to-white">
+      <section id="hero" className="snap-start h-screen bg-gradient-to-b from-[rgb(36,36,36)] to-white">
         <Hero />
       </section>
 
       {/* About */}
-      <section id="about" className="bg-white snap-center">
+      <section id="about" className="bg-white h-screen snap-center">
         <About />
       </section>
 
       {/* Experience */}
-      <section id="experience" className="snap-center bg-gradient-to-b from-white to-[rgb(36,36,36)]">
+      <section id="experience" className="snap-center h-screen bg-gradient-to-b from-white to-[rgb(36,36,36)]">
         <WorkExperience experiences={experiences}/>
       </section>
 
       {/* Skills */}
-      <section id="skills" className="snap-start bg-ultimate">
+      <section id="skills" className="snap-start h-screen bg-ultimate">
         <SkillsPage skills={skills}/>
       </section>
 
